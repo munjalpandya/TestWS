@@ -1,0 +1,527 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="AddAgentTransactionOrder">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strXML" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddAgentTransactionOrderResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AddAgentTransactionOrderResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VerifyAgentTransactionPassword">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strXML" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VerifyAgentTransactionPasswordResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="VerifyAgentTransactionPasswordResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddAgentTransactionCancel">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strXML" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddAgentTransactionCancelResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AddAgentTransactionCancelResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddAgentTransactionRefund">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strXML" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddAgentTransactionRefundResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AddAgentTransactionRefundResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAgentTransactionNo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strXML" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAgentTransactionNoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAgentTransactionNoResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateRemarks">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strXML" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateRemarksResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UpdateRemarksResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddOrder">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strXML" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddOrderResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AddOrderResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddOrderCancel">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strXML" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddOrderCancelResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AddOrderCancelResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddOrderRefund">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strXML" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddOrderRefundResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AddOrderRefundResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateOrderStatusSuccessFail">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strXML" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateOrderStatusSuccessFailResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UpdateOrderStatusSuccessFailResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetOrders">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strXML" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetOrdersResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetOrdersResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VerifyDiscountCoupon">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strRequestXML" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VerifyDiscountCouponResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="VerifyDiscountCouponResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="AddAgentTransactionOrderSoapIn">
+    <wsdl:part name="parameters" element="tns:AddAgentTransactionOrder" />
+  </wsdl:message>
+  <wsdl:message name="AddAgentTransactionOrderSoapOut">
+    <wsdl:part name="parameters" element="tns:AddAgentTransactionOrderResponse" />
+  </wsdl:message>
+  <wsdl:message name="VerifyAgentTransactionPasswordSoapIn">
+    <wsdl:part name="parameters" element="tns:VerifyAgentTransactionPassword" />
+  </wsdl:message>
+  <wsdl:message name="VerifyAgentTransactionPasswordSoapOut">
+    <wsdl:part name="parameters" element="tns:VerifyAgentTransactionPasswordResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddAgentTransactionCancelSoapIn">
+    <wsdl:part name="parameters" element="tns:AddAgentTransactionCancel" />
+  </wsdl:message>
+  <wsdl:message name="AddAgentTransactionCancelSoapOut">
+    <wsdl:part name="parameters" element="tns:AddAgentTransactionCancelResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddAgentTransactionRefundSoapIn">
+    <wsdl:part name="parameters" element="tns:AddAgentTransactionRefund" />
+  </wsdl:message>
+  <wsdl:message name="AddAgentTransactionRefundSoapOut">
+    <wsdl:part name="parameters" element="tns:AddAgentTransactionRefundResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAgentTransactionNoSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAgentTransactionNo" />
+  </wsdl:message>
+  <wsdl:message name="GetAgentTransactionNoSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAgentTransactionNoResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateRemarksSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateRemarks" />
+  </wsdl:message>
+  <wsdl:message name="UpdateRemarksSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateRemarksResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddOrderSoapIn">
+    <wsdl:part name="parameters" element="tns:AddOrder" />
+  </wsdl:message>
+  <wsdl:message name="AddOrderSoapOut">
+    <wsdl:part name="parameters" element="tns:AddOrderResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddOrderCancelSoapIn">
+    <wsdl:part name="parameters" element="tns:AddOrderCancel" />
+  </wsdl:message>
+  <wsdl:message name="AddOrderCancelSoapOut">
+    <wsdl:part name="parameters" element="tns:AddOrderCancelResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddOrderRefundSoapIn">
+    <wsdl:part name="parameters" element="tns:AddOrderRefund" />
+  </wsdl:message>
+  <wsdl:message name="AddOrderRefundSoapOut">
+    <wsdl:part name="parameters" element="tns:AddOrderRefundResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateOrderStatusSuccessFailSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateOrderStatusSuccessFail" />
+  </wsdl:message>
+  <wsdl:message name="UpdateOrderStatusSuccessFailSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateOrderStatusSuccessFailResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetOrdersSoapIn">
+    <wsdl:part name="parameters" element="tns:GetOrders" />
+  </wsdl:message>
+  <wsdl:message name="GetOrdersSoapOut">
+    <wsdl:part name="parameters" element="tns:GetOrdersResponse" />
+  </wsdl:message>
+  <wsdl:message name="VerifyDiscountCouponSoapIn">
+    <wsdl:part name="parameters" element="tns:VerifyDiscountCoupon" />
+  </wsdl:message>
+  <wsdl:message name="VerifyDiscountCouponSoapOut">
+    <wsdl:part name="parameters" element="tns:VerifyDiscountCouponResponse" />
+  </wsdl:message>
+  <wsdl:portType name="PGITransactionServicesVer2Soap">
+    <wsdl:operation name="AddAgentTransactionOrder">
+      <wsdl:input message="tns:AddAgentTransactionOrderSoapIn" />
+      <wsdl:output message="tns:AddAgentTransactionOrderSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="VerifyAgentTransactionPassword">
+      <wsdl:input message="tns:VerifyAgentTransactionPasswordSoapIn" />
+      <wsdl:output message="tns:VerifyAgentTransactionPasswordSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddAgentTransactionCancel">
+      <wsdl:input message="tns:AddAgentTransactionCancelSoapIn" />
+      <wsdl:output message="tns:AddAgentTransactionCancelSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddAgentTransactionRefund">
+      <wsdl:input message="tns:AddAgentTransactionRefundSoapIn" />
+      <wsdl:output message="tns:AddAgentTransactionRefundSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAgentTransactionNo">
+      <wsdl:input message="tns:GetAgentTransactionNoSoapIn" />
+      <wsdl:output message="tns:GetAgentTransactionNoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateRemarks">
+      <wsdl:input message="tns:UpdateRemarksSoapIn" />
+      <wsdl:output message="tns:UpdateRemarksSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddOrder">
+      <wsdl:input message="tns:AddOrderSoapIn" />
+      <wsdl:output message="tns:AddOrderSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddOrderCancel">
+      <wsdl:input message="tns:AddOrderCancelSoapIn" />
+      <wsdl:output message="tns:AddOrderCancelSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddOrderRefund">
+      <wsdl:input message="tns:AddOrderRefundSoapIn" />
+      <wsdl:output message="tns:AddOrderRefundSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateOrderStatusSuccessFail">
+      <wsdl:input message="tns:UpdateOrderStatusSuccessFailSoapIn" />
+      <wsdl:output message="tns:UpdateOrderStatusSuccessFailSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOrders">
+      <wsdl:input message="tns:GetOrdersSoapIn" />
+      <wsdl:output message="tns:GetOrdersSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="VerifyDiscountCoupon">
+      <wsdl:input message="tns:VerifyDiscountCouponSoapIn" />
+      <wsdl:output message="tns:VerifyDiscountCouponSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="PGITransactionServicesVer2Soap" type="tns:PGITransactionServicesVer2Soap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="AddAgentTransactionOrder">
+      <soap:operation soapAction="http://tempuri.org/AddAgentTransactionOrder" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VerifyAgentTransactionPassword">
+      <soap:operation soapAction="http://tempuri.org/VerifyAgentTransactionPassword" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddAgentTransactionCancel">
+      <soap:operation soapAction="http://tempuri.org/AddAgentTransactionCancel" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddAgentTransactionRefund">
+      <soap:operation soapAction="http://tempuri.org/AddAgentTransactionRefund" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAgentTransactionNo">
+      <soap:operation soapAction="http://tempuri.org/GetAgentTransactionNo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateRemarks">
+      <soap:operation soapAction="http://tempuri.org/UpdateRemarks" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddOrder">
+      <soap:operation soapAction="http://tempuri.org/AddOrder" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddOrderCancel">
+      <soap:operation soapAction="http://tempuri.org/AddOrderCancel" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddOrderRefund">
+      <soap:operation soapAction="http://tempuri.org/AddOrderRefund" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateOrderStatusSuccessFail">
+      <soap:operation soapAction="http://tempuri.org/UpdateOrderStatusSuccessFail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOrders">
+      <soap:operation soapAction="http://tempuri.org/GetOrders" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VerifyDiscountCoupon">
+      <soap:operation soapAction="http://tempuri.org/VerifyDiscountCoupon" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="PGITransactionServicesVer2Soap12" type="tns:PGITransactionServicesVer2Soap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="AddAgentTransactionOrder">
+      <soap12:operation soapAction="http://tempuri.org/AddAgentTransactionOrder" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VerifyAgentTransactionPassword">
+      <soap12:operation soapAction="http://tempuri.org/VerifyAgentTransactionPassword" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddAgentTransactionCancel">
+      <soap12:operation soapAction="http://tempuri.org/AddAgentTransactionCancel" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddAgentTransactionRefund">
+      <soap12:operation soapAction="http://tempuri.org/AddAgentTransactionRefund" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAgentTransactionNo">
+      <soap12:operation soapAction="http://tempuri.org/GetAgentTransactionNo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateRemarks">
+      <soap12:operation soapAction="http://tempuri.org/UpdateRemarks" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddOrder">
+      <soap12:operation soapAction="http://tempuri.org/AddOrder" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddOrderCancel">
+      <soap12:operation soapAction="http://tempuri.org/AddOrderCancel" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddOrderRefund">
+      <soap12:operation soapAction="http://tempuri.org/AddOrderRefund" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateOrderStatusSuccessFail">
+      <soap12:operation soapAction="http://tempuri.org/UpdateOrderStatusSuccessFail" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOrders">
+      <soap12:operation soapAction="http://tempuri.org/GetOrders" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VerifyDiscountCoupon">
+      <soap12:operation soapAction="http://tempuri.org/VerifyDiscountCoupon" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="PGITransactionServicesVer2">
+    <wsdl:port name="PGITransactionServicesVer2Soap" binding="tns:PGITransactionServicesVer2Soap">
+      <soap:address location="http://staging.pgofindia.com/pgi/PGITransactionServicesVer2.asmx" />
+    </wsdl:port>
+    <wsdl:port name="PGITransactionServicesVer2Soap12" binding="tns:PGITransactionServicesVer2Soap12">
+      <soap12:address location="http://staging.pgofindia.com/pgi/PGITransactionServicesVer2.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
