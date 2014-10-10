@@ -54,7 +54,5 @@ Public Class Form1
         End Try
     End Sub
 
-    Private Sub Button1_Click(sender As System.Object, e As System.EventArgs) Handles Button1.Click
-        MsgBox(Integer.Parse(Regex.Replace(txtString.Text, "[^\d]", "")))
-    End Sub
+   
 End Class

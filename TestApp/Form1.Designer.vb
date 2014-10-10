@@ -38,8 +38,6 @@ Partial Class Form1
         Me.txtTranAuthKey = New System.Windows.Forms.TextBox()
         Me.chkIsRefundCancel = New System.Windows.Forms.CheckBox()
         Me.btnTest = New System.Windows.Forms.Button()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.txtString = New System.Windows.Forms.TextBox()
         Me.SuspendLayout()
         '
         'Label1
@@ -176,29 +174,11 @@ Partial Class Form1
         Me.btnTest.Text = "Test"
         Me.btnTest.UseVisualStyleBackColor = True
         '
-        'Button1
-        '
-        Me.Button1.Location = New System.Drawing.Point(384, 324)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 16
-        Me.Button1.Text = "Test Regex"
-        Me.Button1.UseVisualStyleBackColor = True
-        '
-        'txtString
-        '
-        Me.txtString.Location = New System.Drawing.Point(384, 288)
-        Me.txtString.Name = "txtString"
-        Me.txtString.Size = New System.Drawing.Size(100, 20)
-        Me.txtString.TabIndex = 17
-        '
         'Form1
         '
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit
         Me.AutoSize = True
         Me.ClientSize = New System.Drawing.Size(632, 453)
-        Me.Controls.Add(Me.txtString)
-        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.btnTest)
         Me.Controls.Add(Me.chkIsRefundCancel)
         Me.Controls.Add(Me.txtTranAuthKey)
@@ -239,7 +219,5 @@ Partial Class Form1
     Friend WithEvents txtTranAuthKey As System.Windows.Forms.TextBox
     Friend WithEvents chkIsRefundCancel As System.Windows.Forms.CheckBox
     Friend WithEvents btnTest As System.Windows.Forms.Button
-    Friend WithEvents Button1 As System.Windows.Forms.Button
-    Friend WithEvents txtString As System.Windows.Forms.TextBox
 
 End Class
